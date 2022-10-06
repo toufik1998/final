@@ -1,0 +1,370 @@
+:root{
+    --color_black: #000;
+    --color_white: #fff;
+    --color_grey: rgb(153, 149, 149);
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins&family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+
+    margin: 2rem 5rem;
+    font-family: 'Roboto', sans-serif;    
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* styling of nav with SALAH */ 
+    /*Navbar main section*/
+.NavBar ul li a{ /*Changing the color of the text in the navbar*/
+    color: #000;
+}
+.NavBar { 
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+    /*Working on the left side of navbar*/
+.LeftNavBar{    
+    display: flex;
+    align-items: center;
+}
+.NavBar h4{ /*removed the margin from the Invitation TEXT/LOGO*/
+    margin: 0px;
+}
+.LeftNavBar ul{
+    display: flex;
+    list-style: none;
+}
+.LeftNavBar ul li{
+    padding: 0 8px;
+}
+.LeftNavBar ul li i{
+    color: grey;
+    margin-left: 2px;
+    font-size: small;
+}
+
+    /*Working on the right side of navbar*/
+.RightNavBar ul li{
+    font-weight: bold;
+    padding: 0 8px;    
+}
+.RightNavBar ul{
+    display: flex;  
+    list-style: none; 
+}
+li.SignUp a {
+    color: #fff !important; /*making it more important than the color of main nav*/
+    padding: 1rem 1rem;
+    background-color: #000;
+    border-radius: 5px;
+}
+    /*Tablet*/
+@media (max-width: 991.98px){
+    .NavBar{
+        margin-left: 0rem;
+        margin-right: 0rem;
+        flex-direction: column;
+    }
+    .LeftNavBar{
+        margin-bottom: 1rem;
+    }
+    .LeftNavBar ul{
+        padding: 0rem;
+    }
+    .NavBar h4{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .RightNavBar{
+        margin-bottom: 1rem;
+    }
+}
+
+/* styling of header with HICHAM */
+#headernav{
+    display: flex;
+    justify-content:space-between; 
+    background-color: black;
+    padding: .6rem 0;
+}
+#headernav .article1{
+    margin-left: 3rem;
+    margin-top: 1rem;
+    color: white;
+}
+#headernav .headerimg img{
+    width: 22rem;
+    margin-right: 1rem;
+    margin-top:.3rem ;
+}
+#headernav .article1 label{
+    border: .5rem solid white;
+    background-color: white;
+    border-radius: 5px;
+}
+#headernav .article1 label input{
+    border: none;
+}
+#headernav .article1 button{
+    margin-left: .6rem; 
+    padding: .6rem 1.2rem;
+    border-radius:5px ;
+    background-image: linear-gradient(to right,#f1723e,#b23a96);
+    color:var(--color_white);
+    border: none;
+    outline: none;
+}
+
+@media (max-width: 768px) { 
+#headernav{
+    display: block;
+}
+#headernav .headerimg img{
+    width:15rem ;
+    margin-left: 13rem;
+}
+} 
+@media (max-width: 575px){
+    body{
+        margin: 0;
+    }
+    #headernav{
+        display: block;
+    }
+    #headernav .article1{
+        margin-right: 3rem;
+        text-align: center;
+    }
+    #headernav .article1 button {
+        margin: 1rem auto;
+        box-shadow: none; 
+    }
+    #headernav .headerimg img{
+        width:10rem;
+        margin-left: 8rem;
+    }
+}
+
+
+
+
+/* styling of section one with SALMA */
+
+
+/* styling of nav with TOUFIK */
+main section.cash-reward{
+    margin-bottom: 2rem;
+}
+
+main section.cash-reward .container-cards{
+    display: flex;
+   /* width: 100%;
+    height: 400px;*/
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+main section.cash-reward .container-cards .card-two{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    padding: 15px;
+}
+
+main section.cash-reward .container-cards .card-two  .heading h2{
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+main section.cash-reward .container-cards .card img{
+    width: 100%;
+    height: 100%;
+}
+
+main section.cash-reward .container-cards .card-two .title {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+main section.cash-reward .container-cards .card-two .title i{
+    color:  #b23a60;
+}
+
+main section.cash-reward .container-cards .card-two p{
+    font-size: .8rem;
+    text-transform: capitalize;
+    color: #707070;
+    margin-bottom: 2rem;
+    line-height: 2;
+}
+
+main section.cash-reward .container-cards .card-two .btn{
+    margin: 1.5rem auto;
+}
+
+.btn button{
+    background-image: linear-gradient(to right, #F1723E , #B23A96);
+    padding: 1rem 1.8rem;
+    color: #fff;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 3px;
+    text-transform: capitalize;
+}
+
+/* styling of images section with TOUFIK */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+  
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+/* media query of images section */
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+}  
+  
+@media screen and (max-width: 767px) {
+    body{
+        padding: 0;
+    }
+
+    main section.cash-reward{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+
+    main section.cash-reward .container-cards{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;  
+    }
+
+
+    main section.cash-reward .container-cards .card-two{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        height: 50%;
+    }
+
+    main section.cash-reward .container-cards .card img{
+        height: 100%;
+        width: 100%;
+    }
+
+    
+}
+
+
+.sponsors img{
+   width: 10%;
+   height: 80px;
+   padding-top: 30px;
+   margin-left: 50px;
+   justify-content: center;
+}
+.sponsors{
+    display: flex;
+    padding-top: 30px;
+    width: 100%;
+    height: 380px;
+    justify-content: center;
+    justify-content: center;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+    background-color: #000;
+    padding-top: 30px;
+    padding-right: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.info1 ul {
+    color: #fff;
+    list-style: none;
+}
+.info1 i{
+    margin-top: 10px;
+    color:black;
+    background-color: #fff;
+    margin-right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+@media (max-width: 991.98px) {
+  .info{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+   
+  } 
+  body{
+    margin: 0;
+  } 
+  .sponsors img{
+    width: 10%;
+    height: 50px;
+    padding-top: 30px;
+    margin-left: 5%;
+    justify-content: center;
+ }
+}
+
+
+
+/* CopyWrite Section SALAH */
+.CopyRight p{
+    text-align: center;
+    color: rgb(98, 96, 96);
+}
